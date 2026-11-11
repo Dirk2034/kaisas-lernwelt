@@ -10,13 +10,14 @@ const levels = [
     tag: "LÄNGEN-SCAN",
     tip: "Bei jeder Stufe nach rechts wird die Zahl 10-mal kleiner. Nach links wird sie 10-mal größer.",
     questions: [
-      { text: "7 Zentimeter sind wie viele Millimeter?", options: ["70 mm", "7 mm", "700 mm", "0,7 mm"], answer: "70 mm", explain: "1 cm sind 10 mm. Also sind 7 cm genau 70 mm." },
-      { text: "4 Dezimeter sind wie viele Zentimeter?", options: ["4 cm", "40 cm", "400 cm", "0,4 cm"], answer: "40 cm", explain: "1 dm sind 10 cm. 4 · 10 = 40 cm." },
-      { text: "300 Zentimeter sind wie viele Meter?", options: ["30 m", "3 m", "3000 m", "0,3 m"], answer: "3 m", explain: "100 cm sind 1 m. 300 cm sind also 3 m." },
-      { text: "2 Meter sind wie viele Dezimeter?", options: ["20 dm", "2 dm", "200 dm", "0,2 dm"], answer: "20 dm", explain: "1 m sind 10 dm. 2 · 10 = 20 dm." },
-      { text: "5 Kilometer sind wie viele Meter?", options: ["50 m", "500 m", "5.000 m", "50.000 m"], answer: "5.000 m", explain: "1 km sind 1.000 m. Deshalb sind 5 km genau 5.000 m." },
-      { text: "9 Dezimeter sind wie viele Zentimeter?", options: ["9 cm", "90 cm", "900 cm", "0,9 cm"], answer: "90 cm", explain: "1 dm sind 10 cm. 9 · 10 = 90 cm." },
-      { text: "2 km und 400 m sind wie viele Meter?", options: ["2.040 m", "2.400 m", "24.000 m", "2.004 m"], answer: "2.400 m", explain: "2 km sind 2.000 m. Dazu kommen 400 m: 2.400 m." }
+      { text: "7 Zentimeter sind wie viele Millimeter?", options: ["70 mm", "7 mm", "700 mm", "0,7 mm"], answer: "70 mm", explain: "1 cm sind 10 mm. Also sind 7 cm genau 70 mm.", difficulty: "easy" },
+      { text: "4 Dezimeter sind wie viele Zentimeter?", options: ["4 cm", "40 cm", "400 cm", "0,4 cm"], answer: "40 cm", explain: "1 dm sind 10 cm. 4 · 10 = 40 cm.", difficulty: "easy" },
+      { text: "300 Zentimeter sind wie viele Meter?", options: ["30 m", "3 m", "3000 m", "0,3 m"], answer: "3 m", explain: "100 cm sind 1 m. 300 cm sind also 3 m.", difficulty: "easy" },
+      { text: "2 Meter sind wie viele Dezimeter?", options: ["20 dm", "2 dm", "200 dm", "0,2 dm"], answer: "20 dm", explain: "1 m sind 10 dm. 2 · 10 = 20 dm.", difficulty: "easy" },
+      { text: "5 Kilometer sind wie viele Meter?", options: ["50 m", "500 m", "5.000 m", "50.000 m"], answer: "5.000 m", explain: "1 km sind 1.000 m. Deshalb sind 5 km genau 5.000 m.", difficulty: "medium" },
+      { text: "9 Dezimeter sind wie viele Zentimeter?", options: ["9 cm", "90 cm", "900 cm", "0,9 cm"], answer: "90 cm", explain: "1 dm sind 10 cm. 9 · 10 = 90 cm.", difficulty: "medium" },
+      { text: "2 km und 400 m sind wie viele Meter?", options: ["2.040 m", "2.400 m", "24.000 m", "2.004 m"], answer: "2.400 m", explain: "2 km sind 2.000 m. Dazu kommen 400 m: 2.400 m.", difficulty: "hard" },
+      { text: "3 m und 6 dm sind wie viele Dezimeter?", options: ["36 dm", "306 dm", "9 dm", "3,6 dm"], answer: "36 dm", explain: "3 m sind 30 dm. Dazu kommen 6 dm: 36 dm.", difficulty: "hard" }
     ]
   },
   {
@@ -28,13 +29,14 @@ const levels = [
     tag: "LÄNGEN-MIX",
     tip: "Schreibe dir die Einheiten-Reihe auf: mm – cm – dm – m – km.",
     questions: [
-      { text: "450 cm sind wie viele Dezimeter?", options: ["4,5 dm", "45 dm", "450 dm", "4.500 dm"], answer: "45 dm", explain: "Von cm zu dm wird durch 10 geteilt: 450 : 10 = 45 dm." },
-      { text: "8 m und 30 cm sind wie viele Zentimeter?", options: ["830 cm", "83 cm", "8.030 cm", "803 cm"], answer: "830 cm", explain: "8 m sind 800 cm. 800 cm + 30 cm = 830 cm." },
-      { text: "1 km und 250 m sind wie viele Meter?", options: ["1.025 m", "1.250 m", "12.500 m", "250 m"], answer: "1.250 m", explain: "1 km sind 1.000 m. Dazu kommen 250 m: 1.250 m." },
-      { text: "90 mm sind wie viele Zentimeter?", options: ["9 cm", "90 cm", "0,9 cm", "900 cm"], answer: "9 cm", explain: "10 mm sind 1 cm. 90 mm sind 9 cm." },
-      { text: "6 dm und 4 cm sind wie viele Zentimeter?", options: ["64 cm", "604 cm", "10 cm", "46 cm"], answer: "64 cm", explain: "6 dm sind 60 cm. 60 cm + 4 cm = 64 cm." },
-      { text: "2 km und 80 m sind wie viele Meter?", options: ["2.080 m", "2.800 m", "280 m", "20.080 m"], answer: "2.080 m", explain: "2 km sind 2.000 m. 2.000 m + 80 m = 2.080 m." },
-      { text: "700 Millimeter sind wie viele Zentimeter?", options: ["7 cm", "70 cm", "700 cm", "0,7 cm"], answer: "70 cm", explain: "10 mm sind 1 cm. 700 mm sind deshalb 70 cm." }
+      { text: "450 cm sind wie viele Dezimeter?", options: ["4,5 dm", "45 dm", "450 dm", "4.500 dm"], answer: "45 dm", explain: "Von cm zu dm wird durch 10 geteilt: 450 : 10 = 45 dm.", difficulty: "easy" },
+      { text: "8 m und 30 cm sind wie viele Zentimeter?", options: ["830 cm", "83 cm", "8.030 cm", "803 cm"], answer: "830 cm", explain: "8 m sind 800 cm. 800 cm + 30 cm = 830 cm.", difficulty: "medium" },
+      { text: "1 km und 250 m sind wie viele Meter?", options: ["1.025 m", "1.250 m", "12.500 m", "250 m"], answer: "1.250 m", explain: "1 km sind 1.000 m. Dazu kommen 250 m: 1.250 m.", difficulty: "medium" },
+      { text: "90 mm sind wie viele Zentimeter?", options: ["9 cm", "90 cm", "0,9 cm", "900 cm"], answer: "9 cm", explain: "10 mm sind 1 cm. 90 mm sind 9 cm.", difficulty: "easy" },
+      { text: "6 dm und 4 cm sind wie viele Zentimeter?", options: ["64 cm", "604 cm", "10 cm", "46 cm"], answer: "64 cm", explain: "6 dm sind 60 cm. 60 cm + 4 cm = 64 cm.", difficulty: "easy" },
+      { text: "2 km und 80 m sind wie viele Meter?", options: ["2.080 m", "2.800 m", "280 m", "20.080 m"], answer: "2.080 m", explain: "2 km sind 2.000 m. 2.000 m + 80 m = 2.080 m.", difficulty: "hard" },
+      { text: "700 Millimeter sind wie viele Zentimeter?", options: ["7 cm", "70 cm", "700 cm", "0,7 cm"], answer: "70 cm", explain: "10 mm sind 1 cm. 700 mm sind deshalb 70 cm.", difficulty: "easy" },
+      { text: "Ein 4 m langes Band wird um 75 cm kürzer. Wie viele Zentimeter bleiben?", options: ["325 cm", "375 cm", "475 cm", "3,25 cm"], answer: "325 cm", explain: "4 m sind 400 cm. 400 cm − 75 cm = 325 cm.", difficulty: "hard" }
     ]
   },
   {
@@ -46,13 +48,14 @@ const levels = [
     tag: "LIQUID-FLOW",
     tip: "Bei Flüssigkeiten kannst du dir merken: 1 l = 10 dl = 100 cl = 1.000 ml.",
     questions: [
-      { text: "3 Liter sind wie viele Milliliter?", options: ["30 ml", "300 ml", "3.000 ml", "30.000 ml"], answer: "3.000 ml", explain: "1 l sind 1.000 ml. 3 l sind also 3.000 ml." },
-      { text: "6 Deziliter sind wie viele Milliliter?", options: ["60 ml", "600 ml", "6.000 ml", "0,6 ml"], answer: "600 ml", explain: "1 dl sind 100 ml. 6 · 100 = 600 ml." },
-      { text: "2.500 ml sind wie viele Liter und Milliliter?", options: ["25 l", "2 l 500 ml", "2 l 50 ml", "250 l"], answer: "2 l 500 ml", explain: "2.000 ml sind 2 l. Es bleiben 500 ml übrig." },
-      { text: "4 Liter und 5 Deziliter sind wie viele Deziliter?", options: ["45 dl", "9 dl", "405 dl", "4,5 dl"], answer: "45 dl", explain: "4 l sind 40 dl. 40 dl + 5 dl = 45 dl." },
-      { text: "800 ml sind wie viele Deziliter?", options: ["8 dl", "80 dl", "0,8 dl", "800 dl"], answer: "8 dl", explain: "1 dl sind 100 ml. 800 ml sind deshalb 8 dl." },
-      { text: "7.500 ml sind wie viele Liter und Milliliter?", options: ["7 l 500 ml", "75 l", "7 l 50 ml", "750 l"], answer: "7 l 500 ml", explain: "7.000 ml sind 7 l. Es bleiben 500 ml übrig." },
-      { text: "9 Deziliter sind wie viele Milliliter?", options: ["90 ml", "900 ml", "9.000 ml", "0,9 ml"], answer: "900 ml", explain: "1 dl sind 100 ml. 9 · 100 = 900 ml." }
+      { text: "3 Liter sind wie viele Milliliter?", options: ["30 ml", "300 ml", "3.000 ml", "30.000 ml"], answer: "3.000 ml", explain: "1 l sind 1.000 ml. 3 l sind also 3.000 ml.", difficulty: "easy" },
+      { text: "6 Deziliter sind wie viele Milliliter?", options: ["60 ml", "600 ml", "6.000 ml", "0,6 ml"], answer: "600 ml", explain: "1 dl sind 100 ml. 6 · 100 = 600 ml.", difficulty: "easy" },
+      { text: "2.500 ml sind wie viele Liter und Milliliter?", options: ["25 l", "2 l 500 ml", "2 l 50 ml", "250 l"], answer: "2 l 500 ml", explain: "2.000 ml sind 2 l. Es bleiben 500 ml übrig.", difficulty: "medium" },
+      { text: "4 Liter und 5 Deziliter sind wie viele Deziliter?", options: ["45 dl", "9 dl", "405 dl", "4,5 dl"], answer: "45 dl", explain: "4 l sind 40 dl. 40 dl + 5 dl = 45 dl.", difficulty: "medium" },
+      { text: "800 ml sind wie viele Deziliter?", options: ["8 dl", "80 dl", "0,8 dl", "800 dl"], answer: "8 dl", explain: "1 dl sind 100 ml. 800 ml sind deshalb 8 dl.", difficulty: "easy" },
+      { text: "7.500 ml sind wie viele Liter und Milliliter?", options: ["7 l 500 ml", "75 l", "7 l 50 ml", "750 l"], answer: "7 l 500 ml", explain: "7.000 ml sind 7 l. Es bleiben 500 ml übrig.", difficulty: "hard" },
+      { text: "9 Deziliter sind wie viele Milliliter?", options: ["90 ml", "900 ml", "9.000 ml", "0,9 ml"], answer: "900 ml", explain: "1 dl sind 100 ml. 9 · 100 = 900 ml.", difficulty: "easy" },
+      { text: "In einem Tank sind 4 l 200 ml. Drei Flaschen mit je 650 ml werden gefüllt. Wie viel bleibt?", options: ["2 l 250 ml", "2 l 550 ml", "3 l 250 ml", "1 l 250 ml"], answer: "2 l 250 ml", explain: "3 · 650 ml = 1.950 ml. 4.200 ml − 1.950 ml = 2.250 ml = 2 l 250 ml.", difficulty: "hard" }
     ]
   },
   {
@@ -64,13 +67,14 @@ const levels = [
     tag: "GEWICHTS-BOOST",
     tip: "1 kg = 1.000 g und 1 t = 1.000 kg. Bei diesen beiden Sprüngen wird mit 1.000 gerechnet.",
     questions: [
-      { text: "4 Kilogramm sind wie viele Gramm?", options: ["40 g", "400 g", "4.000 g", "40.000 g"], answer: "4.000 g", explain: "1 kg sind 1.000 g. 4 kg sind also 4.000 g." },
-      { text: "2 Tonnen sind wie viele Kilogramm?", options: ["200 kg", "2.000 kg", "20 kg", "20.000 kg"], answer: "2.000 kg", explain: "1 t sind 1.000 kg. 2 t sind deshalb 2.000 kg." },
-      { text: "3.500 g sind wie viele Kilogramm und Gramm?", options: ["35 kg", "3 kg 500 g", "3 kg 50 g", "350 kg"], answer: "3 kg 500 g", explain: "3.000 g sind 3 kg. Es bleiben 500 g übrig." },
-      { text: "1 kg und 250 g sind wie viele Gramm?", options: ["1.025 g", "1.250 g", "12.500 g", "250 g"], answer: "1.250 g", explain: "1 kg sind 1.000 g. 1.000 g + 250 g = 1.250 g." },
-      { text: "5.000 kg sind wie viele Tonnen?", options: ["5 t", "50 t", "500 t", "0,5 t"], answer: "5 t", explain: "1.000 kg sind 1 t. 5.000 kg sind also 5 t." },
-      { text: "7 kg und 250 g sind wie viele Gramm?", options: ["7.025 g", "7.250 g", "7.500 g", "725 g"], answer: "7.250 g", explain: "7 kg sind 7.000 g. 7.000 g + 250 g = 7.250 g." },
-      { text: "6 Tonnen und 300 kg sind wie viele Kilogramm?", options: ["6.030 kg", "6.300 kg", "6.003 kg", "63.000 kg"], answer: "6.300 kg", explain: "6 t sind 6.000 kg. Dazu kommen 300 kg: 6.300 kg." }
+      { text: "4 Kilogramm sind wie viele Gramm?", options: ["40 g", "400 g", "4.000 g", "40.000 g"], answer: "4.000 g", explain: "1 kg sind 1.000 g. 4 kg sind also 4.000 g.", difficulty: "easy" },
+      { text: "2 Tonnen sind wie viele Kilogramm?", options: ["200 kg", "2.000 kg", "20 kg", "20.000 kg"], answer: "2.000 kg", explain: "1 t sind 1.000 kg. 2 t sind deshalb 2.000 kg.", difficulty: "easy" },
+      { text: "3.500 g sind wie viele Kilogramm und Gramm?", options: ["35 kg", "3 kg 500 g", "3 kg 50 g", "350 kg"], answer: "3 kg 500 g", explain: "3.000 g sind 3 kg. Es bleiben 500 g übrig.", difficulty: "medium" },
+      { text: "1 kg und 250 g sind wie viele Gramm?", options: ["1.025 g", "1.250 g", "12.500 g", "250 g"], answer: "1.250 g", explain: "1 kg sind 1.000 g. 1.000 g + 250 g = 1.250 g.", difficulty: "easy" },
+      { text: "5.000 kg sind wie viele Tonnen?", options: ["5 t", "50 t", "500 t", "0,5 t"], answer: "5 t", explain: "1.000 kg sind 1 t. 5.000 kg sind also 5 t.", difficulty: "easy" },
+      { text: "7 kg und 250 g sind wie viele Gramm?", options: ["7.025 g", "7.250 g", "7.500 g", "725 g"], answer: "7.250 g", explain: "7 kg sind 7.000 g. 7.000 g + 250 g = 7.250 g.", difficulty: "hard" },
+      { text: "6 Tonnen und 300 kg sind wie viele Kilogramm?", options: ["6.030 kg", "6.300 kg", "6.003 kg", "63.000 kg"], answer: "6.300 kg", explain: "6 t sind 6.000 kg. Dazu kommen 300 kg: 6.300 kg.", difficulty: "medium" },
+      { text: "Ein Gewicht von 2 t 50 kg wird um 750 kg leichter. Wie viel bleibt?", options: ["1.300 kg", "1.350 kg", "1.800 kg", "2.750 kg"], answer: "1.300 kg", explain: "2 t 50 kg sind 2.050 kg. 2.050 kg − 750 kg = 1.300 kg.", difficulty: "hard" }
     ]
   },
   {
@@ -82,31 +86,33 @@ const levels = [
     tag: "KÜCHEN-CHRONIKEN",
     tip: "Markiere zuerst, was du weißt, und überlege dann: Wird etwas weggenommen oder kommt etwas dazu?",
     questions: [
-      { text: "In einer Mehlpackung sind noch 900 g. Für Waffeln werden 200 g und für einen Kuchen 150 g verwendet. Wie viel Mehl bleibt übrig?", options: ["550 g", "650 g", "750 g", "350 g"], answer: "550 g", explain: "Zuerst 200 g + 150 g = 350 g. Dann 900 g − 350 g = 550 g." },
-      { text: "Kaisa hat 2 l Saft. Sie füllt 4 Flaschen mit je 300 ml. Wie viel Saft bleibt?", options: ["800 ml", "1.200 ml", "1.700 ml", "200 ml"], answer: "800 ml", explain: "4 · 300 ml = 1.200 ml. 2 l = 2.000 ml. 2.000 − 1.200 = 800 ml." },
-      { text: "Ein Weg ist 3 km lang. Kaisa ist schon 850 m gegangen. Wie viele Meter fehlen noch?", options: ["2.150 m", "2.850 m", "350 m", "1.150 m"], answer: "2.150 m", explain: "3 km = 3.000 m. 3.000 − 850 = 2.150 m." },
-      { text: "Ein Paket wiegt 4 kg. Darin liegen 1.250 g Bücher und 750 g Bastelsachen. Wie viel wiegt der Rest?", options: ["1 kg", "2 kg", "2.500 g", "3 kg"], answer: "2 kg", explain: "1.250 g + 750 g = 2.000 g = 2 kg. 4 kg − 2 kg = 2 kg." },
-      { text: "Für eine Party sind 5 l Limo da. Es werden 12 Becher mit je 250 ml gefüllt. Wie viel bleibt?", options: ["2 l", "3 l", "4 l", "250 ml"], answer: "2 l", explain: "12 · 250 ml = 3.000 ml = 3 l. 5 l − 3 l = 2 l." },
-      { text: "In einer Vorratsbox sind 1.200 g Reis. Für drei Portionen werden je 200 g verwendet. Wie viel bleibt?", options: ["600 g", "800 g", "1.000 g", "400 g"], answer: "600 g", explain: "3 · 200 g = 600 g. 1.200 g − 600 g = 600 g." },
-      { text: "Kaisa hat 4 l Saft. Sie füllt 5 Flaschen mit je 400 ml. Wie viel bleibt?", options: ["1 l", "2 l", "3 l", "200 ml"], answer: "2 l", explain: "5 · 400 ml = 2.000 ml = 2 l. 4 l − 2 l = 2 l." }
+      { text: "In einer Mehlpackung sind noch 900 g. Für Waffeln werden 200 g und für einen Kuchen 150 g verwendet. Wie viel Mehl bleibt übrig?", options: ["550 g", "650 g", "750 g", "350 g"], answer: "550 g", explain: "Zuerst 200 g + 150 g = 350 g. Dann 900 g − 350 g = 550 g.", difficulty: "easy" },
+      { text: "Kaisa hat 2 l Saft. Sie füllt 4 Flaschen mit je 300 ml. Wie viel Saft bleibt?", options: ["800 ml", "1.200 ml", "1.700 ml", "200 ml"], answer: "800 ml", explain: "4 · 300 ml = 1.200 ml. 2 l = 2.000 ml. 2.000 − 1.200 = 800 ml.", difficulty: "medium" },
+      { text: "Ein Weg ist 3 km lang. Kaisa ist schon 850 m gegangen. Wie viele Meter fehlen noch?", options: ["2.150 m", "2.850 m", "350 m", "1.150 m"], answer: "2.150 m", explain: "3 km = 3.000 m. 3.000 − 850 = 2.150 m.", difficulty: "medium" },
+      { text: "Ein Paket wiegt 4 kg. Darin liegen 1.250 g Bücher und 750 g Bastelsachen. Wie viel wiegt der Rest?", options: ["1 kg", "2 kg", "2.500 g", "3 kg"], answer: "2 kg", explain: "1.250 g + 750 g = 2.000 g = 2 kg. 4 kg − 2 kg = 2 kg.", difficulty: "hard" },
+      { text: "Für eine Party sind 5 l Limo da. Es werden 12 Becher mit je 250 ml gefüllt. Wie viel bleibt?", options: ["2 l", "3 l", "4 l", "250 ml"], answer: "2 l", explain: "12 · 250 ml = 3.000 ml = 3 l. 5 l − 3 l = 2 l.", difficulty: "hard" },
+      { text: "In einer Vorratsbox sind 1.200 g Reis. Für drei Portionen werden je 200 g verwendet. Wie viel bleibt?", options: ["600 g", "800 g", "1.000 g", "400 g"], answer: "600 g", explain: "3 · 200 g = 600 g. 1.200 g − 600 g = 600 g.", difficulty: "easy" },
+      { text: "Kaisa hat 4 l Saft. Sie füllt 5 Flaschen mit je 400 ml. Wie viel bleibt?", options: ["1 l", "2 l", "3 l", "200 ml"], answer: "2 l", explain: "5 · 400 ml = 2.000 ml = 2 l. 4 l − 2 l = 2 l.", difficulty: "easy" },
+      { text: "In einer Schüssel sind 500 g Mehl. Für sechs Muffins werden je 50 g gebraucht. Wie viel bleibt?", options: ["200 g", "250 g", "300 g", "450 g"], answer: "200 g", explain: "6 · 50 g = 300 g. 500 g − 300 g = 200 g.", difficulty: "easy" }
     ]
   },
   {
     id: 6,
-    title: "Schatten-Boss",
+    title: "Wilder Mix",
     short: "Finale · alles gemischt",
     description: "Das große Finale: Einheiten und Sachaufgaben in einer einzigen Boss-Mission.",
     icon: "✹",
-    tag: "SCHATTEN-BOSS",
+    tag: "WILDER MIX",
     tip: "Lies jede Aufgabe zweimal. Wandle zuerst alles in dieselbe Einheit um, bevor du rechnest.",
     questions: [
-      { text: "Eine Strecke ist 2 m und 40 cm lang. Wie viele Millimeter sind das?", options: ["240 mm", "2.040 mm", "2.400 mm", "24.000 mm"], answer: "2.400 mm", explain: "2 m = 2.000 mm und 40 cm = 400 mm. Zusammen sind das 2.400 mm." },
-      { text: "In einem Tank sind 6 l. Es werden 2.500 ml entnommen. Wie viel bleibt?", options: ["3,5 l", "4,5 l", "5,5 l", "3 l"], answer: "3,5 l", explain: "6 l = 6.000 ml. 6.000 − 2.500 = 3.500 ml = 3,5 l." },
-      { text: "Ein LKW transportiert 3 t. 850 kg werden ausgeladen. Wie viel bleibt auf dem LKW?", options: ["2.150 kg", "2.850 kg", "1.150 kg", "350 kg"], answer: "2.150 kg", explain: "3 t = 3.000 kg. 3.000 − 850 = 2.150 kg." },
-      { text: "Ein 4 m langes Band wird in 8 gleich große Stücke geteilt. Wie lang ist jedes Stück?", options: ["5 cm", "50 cm", "80 cm", "32 cm"], answer: "50 cm", explain: "4 m = 400 cm. 400 : 8 = 50 cm." },
-      { text: "Für drei Missionen braucht Kaisa je 750 ml Energie-Drink. Sie hat 3 l. Wie viel bleibt?", options: ["250 ml", "500 ml", "750 ml", "1.250 ml"], answer: "750 ml", explain: "3 · 750 ml = 2.250 ml. 3.000 − 2.250 = 750 ml." },
-      { text: "Ein LKW hat 2 t und 400 kg geladen. 750 kg werden ausgeladen. Wie viel bleibt?", options: ["1.650 kg", "2.150 kg", "1.750 kg", "2.650 kg"], answer: "1.650 kg", explain: "2 t 400 kg sind 2.400 kg. 2.400 − 750 = 1.650 kg." },
-      { text: "In einem Tank sind 5 l. Sechs Becher mit je 450 ml werden gefüllt. Wie viel bleibt?", options: ["2 l 300 ml", "2 l 500 ml", "3 l 300 ml", "450 ml"], answer: "2 l 300 ml", explain: "6 · 450 ml = 2.700 ml. 5.000 ml − 2.700 ml = 2.300 ml = 2 l 300 ml." }
+      { text: "Ein 4 m langes Band wird in 8 gleich große Stücke geteilt. Wie lang ist jedes Stück?", options: ["5 cm", "50 cm", "80 cm", "32 cm"], answer: "50 cm", explain: "4 m = 400 cm. 400 : 8 = 50 cm.", difficulty: "easy" },
+      { text: "2 kg und 300 g sind wie viele Gramm?", options: ["2.030 g", "2.300 g", "2.003 g", "23.000 g"], answer: "2.300 g", explain: "2 kg sind 2.000 g. Dazu kommen 300 g: 2.300 g.", difficulty: "easy" },
+      { text: "1,5 Liter sind wie viele Milliliter?", options: ["150 ml", "1.050 ml", "1.500 ml", "15.000 ml"], answer: "1.500 ml", explain: "1 l sind 1.000 ml und 0,5 l sind 500 ml. Zusammen sind das 1.500 ml.", difficulty: "easy" },
+      { text: "3 m und 20 cm sind wie viele Zentimeter?", options: ["320 cm", "302 cm", "3.020 cm", "32 cm"], answer: "320 cm", explain: "3 m sind 300 cm. 300 cm + 20 cm = 320 cm.", difficulty: "easy" },
+      { text: "Eine Strecke ist 2 m und 40 cm lang. Wie viele Millimeter sind das?", options: ["240 mm", "2.040 mm", "2.400 mm", "24.000 mm"], answer: "2.400 mm", explain: "2 m = 2.000 mm und 40 cm = 400 mm. Zusammen sind das 2.400 mm.", difficulty: "medium" },
+      { text: "In einem Tank sind 6 l. Es werden 2.500 ml entnommen. Wie viel bleibt?", options: ["3,5 l", "4,5 l", "5,5 l", "3 l"], answer: "3,5 l", explain: "6 l = 6.000 ml. 6.000 − 2.500 = 3.500 ml = 3,5 l.", difficulty: "medium" },
+      { text: "Für drei Missionen braucht Kaisa je 750 ml Energie-Drink. Sie hat 3 l. Wie viel bleibt?", options: ["250 ml", "500 ml", "750 ml", "1.250 ml"], answer: "750 ml", explain: "3 · 750 ml = 2.250 ml. 3.000 − 2.250 = 750 ml.", difficulty: "hard" },
+      { text: "Ein LKW hat 2 t und 400 kg geladen. 750 kg werden ausgeladen. Wie viel bleibt?", options: ["1.650 kg", "2.150 kg", "1.750 kg", "2.650 kg"], answer: "1.650 kg", explain: "2 t 400 kg sind 2.400 kg. 2.400 − 750 = 1.650 kg.", difficulty: "hard" }
     ]
   }
 ];
@@ -132,10 +138,13 @@ const $ = (selector) => document.querySelector(selector);
 function loadProgress() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    const levelXp = { ...defaultProgress.levelXp, ...(saved.levelXp || {}) };
+    const completed = [...new Set(saved.completed || [])].filter((levelId) => Number(levelXp[levelId] || 0) >= 100);
     return {
       ...defaultProgress,
       ...saved,
-      levelXp: { ...defaultProgress.levelXp, ...(saved.levelXp || {}) },
+      completed,
+      levelXp,
       levelRuns: { ...defaultProgress.levelRuns, ...(saved.levelRuns || {}) }
     };
   } catch { return blankProgress(); }
@@ -164,14 +173,25 @@ function shuffle(items) {
   return copy;
 }
 
+const missionPattern = ["easy", "easy", "easy", "medium", "hard"];
+
 function buildQuestionSet(level) {
   const history = progress.levelRuns[level.id] || {};
-  if (!history.asked?.length) return level.questions.slice(0, 5);
-  const byId = (id) => level.questions.find((question) => question.id === id);
-  const wrong = (history.wrong || []).map(byId).filter(Boolean);
-  const unseen = level.questions.filter((question) => !(history.asked || []).includes(question.id));
-  const fallback = shuffle(level.questions.filter((question) => !wrong.some((item) => item.id === question.id) && !unseen.some((item) => item.id === question.id)));
-  return [...wrong, ...shuffle(unseen), ...fallback].slice(0, 5);
+  const asked = history.asked || [];
+  const wrong = history.wrong || [];
+  const used = new Set();
+
+  const pickForDifficulty = (difficulty) => {
+    const bucket = level.questions.filter((question) => question.difficulty === difficulty && !used.has(question.id));
+    const previousWrong = shuffle(bucket.filter((question) => wrong.includes(question.id)));
+    const unseen = shuffle(bucket.filter((question) => !asked.includes(question.id)));
+    const candidates = previousWrong.length ? previousWrong : unseen.length ? unseen : shuffle(bucket);
+    const selected = candidates[0];
+    if (selected) used.add(selected.id);
+    return selected;
+  };
+
+  return missionPattern.map(pickForDifficulty).filter(Boolean);
 }
 
 function updateQuizXp() {
@@ -267,7 +287,7 @@ function finishLevel() {
   const newlyEarned = newLevelXp - previousLevelXp;
   const justFinished = previousLevelXp < 100 && newLevelXp >= 100;
   const wasCompleted = progress.completed.includes(activeLevel.id);
-  if (!wasCompleted) progress.completed.push(activeLevel.id);
+  if (newLevelXp >= 100 && !wasCompleted) progress.completed.push(activeLevel.id);
   progress.levelXp[activeLevel.id] = newLevelXp;
   progress.xp += newlyEarned;
   progress.streak += 1;
