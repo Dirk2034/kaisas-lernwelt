@@ -152,7 +152,7 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); letter-spacing: -.045em; margin: 10p
 .level-card-footer .xp { color: var(--turquoise); font-weight: 900; }
 .level-card-footer .level-finished { color: #ffffff; font-size: 13px; letter-spacing: .04em; text-shadow: 0 0 13px rgba(64,240,208,.55); }
 .level-card-footer .level-finished small { display: block; color: var(--turquoise); font-size: 9px; letter-spacing: .12em; margin-top: 3px; }
-.level-card-footer .xp b { display: inline-block; margin-left: 6px; font-size: 17px; vertical-align: -2px; }
+.level-card-footer .xp b { display: inline-block; margin-left: 6px; color: var(--purple); font-size: 17px; text-shadow: 0 0 11px rgba(168, 120, 255, .6); vertical-align: -2px; }
 .completed-mark { color: var(--turquoise); }
 .quick-note { display: flex; align-items: center; gap: 15px; margin-top: 18px; padding: 17px 19px; border: 1px solid rgba(168, 120, 255, .2); border-radius: 15px; background: rgba(168, 120, 255, .06); }
 .note-icon { color: var(--purple); font-size: 23px; }
