@@ -100,7 +100,7 @@ const levels = [
     id: 6,
     title: "Wilder Mix",
     short: "Finale · alles gemischt",
-    description: "Das große Finale: Einheiten und Sachaufgaben in einer einzigen Boss-Mission.",
+    description: "Das große Finale: Längen, Flüssigkeiten, Gewichte und Rechenwege in einer einzigen Mix-Mission.",
     icon: "✹",
     tag: "WILDER MIX",
     tip: "Lies jede Aufgabe zweimal. Wandle zuerst alles in dieselbe Einheit um, bevor du rechnest.",
