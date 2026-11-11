@@ -1,0 +1,10 @@
+{
+  "name": "Kaisas Lernwelt",
+  "short_name": "Kaisas Lernwelt",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#060a0d",
+  "theme_color": "#071014",
+  "description": "Mathe-Missionen im dunklen K-Pop-Demon-Hunter-Stil.",
+  "lang": "de"
+}

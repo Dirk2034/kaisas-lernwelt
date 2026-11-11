@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071014" />
+    <meta name="description" content="Kaisas Lernwelt – Mathe-Missionen im Demon-Hunter-K-Pop-Stil." />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <title>Kaisas Lernwelt</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="Kaisas Lernwelt Startseite">
+          <span class="brand-heart" aria-hidden="true">
+            <svg class="fighter-logo" viewBox="0 0 120 120" role="img" aria-label="Kämpferinnen-Symbol">
+              <path class="heart-shape" d="M60 108C55 101 16 78 16 43 16 22 40 15 60 37 80 15 104 22 104 43c0 35-39 58-44 65Z" />
+              <circle class="fighter-dark" cx="60" cy="42" r="10" />
+              <path class="fighter-dark" d="M43 72c3-15 11-23 17-23s14 8 17 23l7 23H36Z" />
+              <path class="fighter-line" d="M45 61 28 83m47-23 19-29M41 77 29 96m50-19 14 18M48 33c6-7 18-7 24 0" />
+              <path class="fighter-accent" d="M45 68c9 5 21 5 30 0" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>Kaisas</strong>
+            <span class="brand-title">Lernwelt</span>
+            <span class="brand-note">MATHE · MISSIONEN</span>
+          </span>
+        </a>
+        <div class="top-actions">
+          <div class="xp-pill" title="Deine bisherige XP">
+            <span>⚡</span><strong id="xp-total">0 / 600 XP</strong>
+          </div>
+          <button class="icon-button" id="reset-progress" type="button" aria-label="Fortschritt zurücksetzen" title="Fortschritt zurücksetzen">↺</button>
+        </div>
+      </header>
+
+      <main id="app" tabindex="-1">
+        <section class="screen home-screen" id="home-screen">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <div class="eyebrow"><span class="pulse-dot"></span> MISSION CONTROL · MATHE</div>
+              <h1>Bereit für deine<br /><span>nächste Mission?</span></h1>
+              <p class="hero-text">Kaisa, die Schatten rechnen schon. Sammle XP, aktiviere deine türkise Energie und werde zur Einheiten-Hüterin.</p>
+              <div class="hero-actions">
+                <button class="primary-button" id="continue-button" type="button">Mission starten <span>→</span></button>
+                <div class="streak"><span class="streak-icon">✦</span><span><strong id="streak-value">0</strong> Missionen-Serie<br /><small>Bleib im Flow</small></span></div>
+              </div>
+            </div>
+            <div class="hero-art" aria-label="Abstrakte Demon-Hunter-K-Pop-Missionsgrafik">
+              <div class="moon"></div>
+              <div class="hunter-figure" aria-hidden="true">
+                <svg viewBox="0 0 260 340" role="img" aria-label="Eigene stilisierte Schattenjägerin">
+                  <defs>
+                    <linearGradient id="hunter-jacket" x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0" stop-color="#51f6d5" />
+                      <stop offset="1" stop-color="#0b6c72" />
+                    </linearGradient>
+                    <linearGradient id="hunter-hair" x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0" stop-color="#142c3d" />
+                      <stop offset="1" stop-color="#06090d" />
+                    </linearGradient>
+                  </defs>
+                  <path class="hunter-cape" d="M69 159c-36 33-48 83-37 144l57-26 18-81Z" />
+                  <path class="hunter-cape hunter-cape-right" d="M186 159c36 33 48 83 37 144l-57-26-18-81Z" />
+                  <path class="hunter-hair" d="M77 104c-3-39 19-72 56-72 41 0 58 39 52 77l-15 31-22-25-30 22-37-13Z" />
+                  <ellipse class="hunter-face" cx="131" cy="106" rx="34" ry="39" />
+                  <path class="hunter-fringe" d="M98 91c10-31 55-39 70-6-10-4-19-9-30-4-14 6-23 7-40 10Z" />
+                  <path class="hunter-eye" d="M112 108l9 2m20 0 9-2" />
+                  <path class="hunter-jacket" d="M92 143c13 13 25 19 39 19s27-6 40-19c23 16 39 42 48 83l-49-10-17 38-17-38-49 10c9-41 25-67 48-83Z" />
+                  <path class="hunter-shirt" d="M122 158h18l10 54-19 25-19-25Z" />
+                  <path class="hunter-detail" d="M99 175l22 27m40-27-22 27m-13 13h10m-5-8v17" />
+                  <path class="hunter-arm" d="M91 169 57 223m86-31 41 33" />
+                  <path class="hunter-sword" d="M183 225 242 58" />
+                  <path class="hunter-sword-glow" d="M184 227 243 58" />
+                  <path class="hunter-sword-hilt" d="m177 229 14 6m-9-14 13 6" />
+                  <circle class="hunter-sigil" cx="132" cy="247" r="18" />
+                  <path class="hunter-sigil-line" d="M132 233v28m-14-14h28" />
+                </svg>
+              </div>
+              <div class="sigil sigil-one">✦</div>
+              <div class="sigil sigil-two">◇</div>
+              <div class="blade blade-left"></div>
+              <div class="blade blade-right"></div>
+              <div class="hero-card">
+                <span class="hero-card-label">AKTIVE JÄGERIN</span>
+                  <strong>KAISA // HUNTER</strong>
+                <span class="hero-card-line"></span>
+                <small>UNIT CONVERTER · RANG 01</small>
+              </div>
+              <div class="hero-orbit orbit-one"></div>
+              <div class="hero-orbit orbit-two"></div>
+            </div>
+          </div>
+
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">DEINE KAMPAGNE</div>
+              <h2>Die sechs Siegel</h2>
+            </div>
+            <div class="progress-summary"><span id="levels-complete">0</span>/6 aktiviert</div>
+          </div>
+
+          <div class="level-grid" id="level-grid"></div>
+
+          <section class="quick-note">
+            <span class="note-icon">☄</span>
+            <div><strong>Heute im Training</strong><p>Übe erst eine Einheiten-Familie und stell dich danach der gemischten Boss-Mission.</p></div>
+          </section>
+        </section>
+
+        <section class="screen quiz-screen hidden" id="quiz-screen">
+          <div class="quiz-topline">
+            <button class="back-button" id="back-home" type="button">← Übersicht</button>
+            <div class="quiz-meta"><span id="quiz-level-label">SIEGEL 01</span><span id="quiz-progress-label">1 / 5</span></div>
+          </div>
+          <div class="quiz-progress"><span id="quiz-progress-bar"></span></div>
+          <div class="quiz-layout">
+            <div class="quiz-main">
+              <div class="mission-tag"><span id="mission-icon">◈</span><span id="mission-tag-text">LÄNGEN-SCAN</span></div>
+              <h2 id="question-title">Bereit?</h2>
+              <p id="question-text" class="question-text"></p>
+              <div class="answer-grid" id="answer-grid"></div>
+              <div class="feedback hidden" id="feedback" role="status">
+                <div class="feedback-icon" id="feedback-icon">✓</div>
+                <div><strong id="feedback-title">Stark!</strong><p id="feedback-text"></p></div>
+              </div>
+              <button class="primary-button next-button hidden" id="next-question" type="button">Weiter <span>→</span></button>
+            </div>
+            <aside class="quiz-aside">
+              <div class="aside-card hunter-card">
+                <div class="mini-sigil">✦</div>
+                <span class="aside-label">SIEGEL-XP</span>
+                <strong id="quiz-xp">0/100 XP</strong>
+                <div class="energy-bar"><span id="energy-bar-fill"></span></div>
+                <small id="combo-label">Löse Aufgaben, um Energie zu laden.</small>
+              </div>
+              <div class="aside-card tip-card">
+                <span class="aside-label">HUNTER-TIPP</span>
+                <p id="tip-text">Eine Stufe nach rechts bedeutet: Die Zahl wird größer.</p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="screen result-screen hidden" id="result-screen">
+          <div class="result-sigil">✦</div>
+          <div class="eyebrow">MISSION ABGESCHLOSSEN</div>
+          <h2 id="result-title">Siegel aktiviert!</h2>
+          <p id="result-subtitle">Das Schattenportal ist geschlossen.</p>
+          <div class="result-stats">
+            <div><strong id="result-score">0/5</strong><span>richtig</span></div>
+            <div><strong id="result-level-xp">0/100</strong><span>Siegel-XP</span></div>
+            <div><strong id="result-earned">+0 XP</strong><span>dieser Lauf</span></div>
+            <div><strong id="result-streak">0</strong><span>Serie</span></div>
+          </div>
+          <div class="result-actions">
+            <button class="primary-button" id="result-home" type="button">Zur Übersicht <span>→</span></button>
+            <button class="secondary-button" id="result-retry" type="button">Noch einmal</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer"><span>KAISAS LERNWELT</span><span>MATHE · MISSION CONTROL</span></footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
