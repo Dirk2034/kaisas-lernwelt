@@ -30,7 +30,17 @@
         </a>
         <div class="top-actions">
           <div class="xp-pill" title="Deine bisherige XP">
-            <span>⚡</span><strong id="xp-total">0 / 600 XP</strong>
+            <span class="xp-icon" aria-hidden="true">
+              <svg class="xp-icon-svg" viewBox="0 0 24 24" focusable="false">
+                <defs>
+                  <linearGradient id="xp-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop offset="0" stop-color="#a877ff" />
+                    <stop offset="1" stop-color="#ff63bb" />
+                  </linearGradient>
+                </defs>
+                <path d="M13.2 2 4.7 13.1h5.8L9.6 22 19.4 9.5h-6.1L13.2 2Z" />
+              </svg>
+            </span><strong id="xp-total">0 / 600 XP</strong>
           </div>
           <button class="icon-button" id="reset-progress" type="button" aria-label="Fortschritt zurücksetzen" title="Fortschritt zurücksetzen">↺</button>
         </div>
