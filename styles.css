@@ -104,7 +104,15 @@ h1 span { color: var(--turquoise); text-shadow: 0 0 30px rgba(64, 240, 208, .18)
 .hero-card-line { display: block; height: 2px; width: 54px; background: var(--turquoise); margin: 7px 0; }
 .hero-card small { color: var(--turquoise); font-size: 9px; letter-spacing: .08em; }
 
-.section-heading { display: flex; justify-content: space-between; align-items: end; margin: 72px 0 22px; }
+.overview-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 24px; padding: 8px 0; border: 1px solid rgba(149, 222, 214, .14); border-radius: 16px; background: rgba(13, 21, 26, .72); box-shadow: inset 0 0 22px rgba(64, 240, 208, .025); }
+.overview-item { display: flex; align-items: center; gap: 11px; min-width: 0; padding: 8px 18px; border-right: 1px solid rgba(149, 222, 214, .13); }
+.overview-item:last-child { border-right: 0; }
+.overview-icon { flex: 0 0 30px; display: grid; place-items: center; width: 30px; height: 30px; color: var(--turquoise); border: 1px solid rgba(64, 240, 208, .3); border-radius: 9px; background: rgba(64, 240, 208, .06); font-size: 15px; }
+.overview-icon-pink { color: var(--pink); border-color: rgba(255, 99, 187, .3); background: rgba(255, 99, 187, .06); font-size: 13px; }
+.overview-label { display: block; overflow: hidden; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .12em; line-height: 1.2; text-overflow: ellipsis; text-transform: uppercase; white-space: nowrap; }
+.overview-value { display: block; margin-top: 4px; color: var(--text); font-size: 20px; letter-spacing: -.04em; line-height: 1; }
+.overview-value small { color: var(--muted); font-size: 10px; font-weight: 650; letter-spacing: 0; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; margin: 42px 0 22px; }
 h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); letter-spacing: -.045em; margin: 10px 0 0; }
 .progress-summary { color: var(--muted); font-size: 13px; }
 .progress-summary span { color: var(--turquoise); font-weight: 800; }
@@ -210,6 +218,10 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); letter-spacing: -.045em; margin: 10p
   .moon { width: 126px; height: 126px; top: 26px; right: 31px; }
   .hunter-figure { transform: translateX(-50%) scale(.82); transform-origin: bottom center; bottom: -57px; }
   .hero-card { left: 20px; bottom: 18px; }
+  .overview-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .overview-item { padding: 8px 14px; }
+  .overview-item:nth-child(2) { border-right: 0; }
+  .overview-item:nth-child(-n+2) { border-bottom: 1px solid rgba(149, 222, 214, .13); }
   .level-grid { grid-template-columns: repeat(2, 1fr); }
   .quiz-layout { grid-template-columns: 1fr; gap: 30px; }
   .quiz-aside { display: grid; grid-template-columns: 1fr 1fr; }
@@ -235,13 +247,18 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); letter-spacing: -.045em; margin: 10p
   .streak { align-self: flex-start; }
   .hero-art { height: 240px; border-radius: 20px; }
   .hunter-figure { transform: translateX(-50%) scale(.66); bottom: -80px; }
+  .overview-strip { margin-top: 18px; }
+  .overview-item { gap: 8px; padding: 8px 10px; }
+  .overview-icon { flex-basis: 26px; width: 26px; height: 26px; font-size: 13px; }
+  .overview-label { font-size: 8px; letter-spacing: .08em; }
+  .overview-value { font-size: 18px; }
   .level-grid { grid-template-columns: 1fr; }
   .level-card { min-height: 245px; padding: 22px; }
   .level-card-main { align-items: flex-start; gap: 13px; margin: 24px 0 20px; }
   .level-card-symbol { flex-basis: 64px; width: 64px; height: 64px; border-radius: 20px; }
   .level-card-symbol span { font-size: 28px; }
   .level-card h3 { font-size: 1.4rem; }
-  .section-heading { margin-top: 53px; align-items: center; }
+  .section-heading { margin-top: 36px; align-items: center; }
   .section-heading h2 { font-size: 2rem; }
   .quiz-topline { align-items: flex-start; }
   .quiz-meta { flex-direction: column; gap: 3px; align-items: flex-end; }

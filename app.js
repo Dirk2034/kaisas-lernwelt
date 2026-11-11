@@ -121,7 +121,8 @@ levels.forEach((level) => level.questions.forEach((question, index) => {
   question.id = `${level.id}-${index + 1}`;
 }));
 
-const blankProgress = () => ({ xp: 0, completed: [], streak: 0, lastLevel: 1, levelXp: {}, levelRuns: {} });
+const totalQuestionCount = levels.reduce((total, level) => total + level.questions.length, 0);
+const blankProgress = () => ({ xp: 0, completed: [], streak: 0, lastLevel: 1, levelXp: {}, levelRuns: {}, correctAnswers: 0, answeredQuestions: 0, masteredQuestions: [] });
 const defaultProgress = blankProgress();
 let progress = loadProgress();
 let activeLevel = null;
@@ -140,12 +141,16 @@ function loadProgress() {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
     const levelXp = { ...defaultProgress.levelXp, ...(saved.levelXp || {}) };
     const completed = [...new Set(saved.completed || [])].filter((levelId) => Number(levelXp[levelId] || 0) >= 100);
+    const masteredQuestions = [...new Set(saved.masteredQuestions || [])];
     return {
       ...defaultProgress,
       ...saved,
       completed,
       levelXp,
-      levelRuns: { ...defaultProgress.levelRuns, ...(saved.levelRuns || {}) }
+      levelRuns: { ...defaultProgress.levelRuns, ...(saved.levelRuns || {}) },
+      correctAnswers: Number(saved.correctAnswers || 0),
+      answeredQuestions: Number(saved.answeredQuestions || 0),
+      masteredQuestions
     };
   } catch { return blankProgress(); }
 }
@@ -156,6 +161,10 @@ function updateHeader() {
   $("#xp-total").textContent = `${progress.xp} / 600 XP`;
   $("#streak-value").textContent = progress.streak;
   $("#levels-complete").textContent = progress.completed.length;
+  $("#correct-answers").innerHTML = `${progress.correctAnswers} <small>von ${progress.answeredQuestions}</small>`;
+  $("#missions-complete").innerHTML = `${progress.completed.length} <small>von 6</small>`;
+  $("#mastered-questions").innerHTML = `${progress.masteredQuestions.length} <small>von ${totalQuestionCount}</small>`;
+  $("#mission-streak").innerHTML = `${progress.streak} <small>Missionen</small>`;
 }
 
 function levelXpFor(levelId) { return Math.min(100, Number(progress.levelXp[levelId] || 0)); }
@@ -270,6 +279,13 @@ function answerQuestion(button, question) {
     if (item.dataset.option === question.answer) item.classList.add("correct");
   });
   if (!correct) button.classList.add("wrong");
+  progress.answeredQuestions += 1;
+  if (correct) {
+    progress.correctAnswers += 1;
+    if (!progress.masteredQuestions.includes(question.id)) progress.masteredQuestions.push(question.id);
+  }
+  saveProgress();
+  updateHeader();
   const possibleXp = missionXp[questionIndex] || 0;
   const remainingXp = Math.max(0, 100 - currentLevelXp());
   const awardedXp = correct ? Math.min(possibleXp, remainingXp) : 0;
