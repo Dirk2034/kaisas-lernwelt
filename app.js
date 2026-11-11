@@ -15,9 +15,9 @@ const levels = [
       { text: "300 Zentimeter sind wie viele Meter?", options: ["30 m", "3 m", "3000 m", "0,3 m"], answer: "3 m", explain: "100 cm sind 1 m. 300 cm sind also 3 m.", difficulty: "easy" },
       { text: "2 Meter sind wie viele Dezimeter?", options: ["20 dm", "2 dm", "200 dm", "0,2 dm"], answer: "20 dm", explain: "1 m sind 10 dm. 2 · 10 = 20 dm.", difficulty: "easy" },
       { text: "5 Kilometer sind wie viele Meter?", options: ["50 m", "500 m", "5.000 m", "50.000 m"], answer: "5.000 m", explain: "1 km sind 1.000 m. Deshalb sind 5 km genau 5.000 m.", difficulty: "medium" },
-      { text: "9 Dezimeter sind wie viele Zentimeter?", options: ["9 cm", "90 cm", "900 cm", "0,9 cm"], answer: "90 cm", explain: "1 dm sind 10 cm. 9 · 10 = 90 cm.", difficulty: "medium" },
-      { text: "2 km und 400 m sind wie viele Meter?", options: ["2.040 m", "2.400 m", "24.000 m", "2.004 m"], answer: "2.400 m", explain: "2 km sind 2.000 m. Dazu kommen 400 m: 2.400 m.", difficulty: "hard" },
-      { text: "3 m und 6 dm sind wie viele Dezimeter?", options: ["36 dm", "306 dm", "9 dm", "3,6 dm"], answer: "36 dm", explain: "3 m sind 30 dm. Dazu kommen 6 dm: 36 dm.", difficulty: "hard" }
+      { text: "3 m und 4 dm sind wie viele Dezimeter?", options: ["34 dm", "7 dm", "304 dm", "3,4 dm"], answer: "34 dm", explain: "3 m sind 30 dm. Dazu kommen 4 dm: 34 dm.", difficulty: "medium" },
+      { text: "Eine Strecke ist 2 km 400 m lang. Sie wird um 650 m verlängert. Wie lang ist sie?", options: ["2.650 m", "3.050 m", "3.400 m", "2.040 m"], answer: "3.050 m", explain: "2 km 400 m sind 2.400 m. 2.400 m + 650 m = 3.050 m.", difficulty: "hard" },
+      { text: "Eine Strecke ist 3 m 6 dm lang. Sie wird um 8 dm verlängert. Wie lang ist sie in Dezimetern?", options: ["36 dm", "38 dm", "44 dm", "46 dm"], answer: "44 dm", explain: "3 m 6 dm sind 36 dm. 36 dm + 8 dm = 44 dm.", difficulty: "hard" }
     ]
   },
   {
@@ -34,7 +34,7 @@ const levels = [
       { text: "1 km und 250 m sind wie viele Meter?", options: ["1.025 m", "1.250 m", "12.500 m", "250 m"], answer: "1.250 m", explain: "1 km sind 1.000 m. Dazu kommen 250 m: 1.250 m.", difficulty: "medium" },
       { text: "90 mm sind wie viele Zentimeter?", options: ["9 cm", "90 cm", "0,9 cm", "900 cm"], answer: "9 cm", explain: "10 mm sind 1 cm. 90 mm sind 9 cm.", difficulty: "easy" },
       { text: "6 dm und 4 cm sind wie viele Zentimeter?", options: ["64 cm", "604 cm", "10 cm", "46 cm"], answer: "64 cm", explain: "6 dm sind 60 cm. 60 cm + 4 cm = 64 cm.", difficulty: "easy" },
-      { text: "2 km und 80 m sind wie viele Meter?", options: ["2.080 m", "2.800 m", "280 m", "20.080 m"], answer: "2.080 m", explain: "2 km sind 2.000 m. 2.000 m + 80 m = 2.080 m.", difficulty: "hard" },
+      { text: "Eine Strecke ist 2 km 80 m lang. Sie wird um 450 m verlängert. Wie lang ist sie?", options: ["2.080 m", "2.450 m", "2.530 m", "2.980 m"], answer: "2.530 m", explain: "2 km 80 m sind 2.080 m. 2.080 m + 450 m = 2.530 m.", difficulty: "hard" },
       { text: "700 Millimeter sind wie viele Zentimeter?", options: ["7 cm", "70 cm", "700 cm", "0,7 cm"], answer: "70 cm", explain: "10 mm sind 1 cm. 700 mm sind deshalb 70 cm.", difficulty: "easy" },
       { text: "Ein 4 m langes Band wird um 75 cm kürzer. Wie viele Zentimeter bleiben?", options: ["325 cm", "375 cm", "475 cm", "3,25 cm"], answer: "325 cm", explain: "4 m sind 400 cm. 400 cm − 75 cm = 325 cm.", difficulty: "hard" }
     ]
@@ -53,7 +53,7 @@ const levels = [
       { text: "2.500 ml sind wie viele Liter und Milliliter?", options: ["25 l", "2 l 500 ml", "2 l 50 ml", "250 l"], answer: "2 l 500 ml", explain: "2.000 ml sind 2 l. Es bleiben 500 ml übrig.", difficulty: "medium" },
       { text: "4 Liter und 5 Deziliter sind wie viele Deziliter?", options: ["45 dl", "9 dl", "405 dl", "4,5 dl"], answer: "45 dl", explain: "4 l sind 40 dl. 40 dl + 5 dl = 45 dl.", difficulty: "medium" },
       { text: "800 ml sind wie viele Deziliter?", options: ["8 dl", "80 dl", "0,8 dl", "800 dl"], answer: "8 dl", explain: "1 dl sind 100 ml. 800 ml sind deshalb 8 dl.", difficulty: "easy" },
-      { text: "7.500 ml sind wie viele Liter und Milliliter?", options: ["7 l 500 ml", "75 l", "7 l 50 ml", "750 l"], answer: "7 l 500 ml", explain: "7.000 ml sind 7 l. Es bleiben 500 ml übrig.", difficulty: "hard" },
+      { text: "In einem Tank sind 7.500 ml. Drei Flaschen mit je 450 ml werden gefüllt. Wie viel bleibt?", options: ["6 l 150 ml", "6 l 500 ml", "7 l 50 ml", "5 l 150 ml"], answer: "6 l 150 ml", explain: "3 · 450 ml = 1.350 ml. 7.500 ml − 1.350 ml = 6.150 ml = 6 l 150 ml.", difficulty: "hard" },
       { text: "9 Deziliter sind wie viele Milliliter?", options: ["90 ml", "900 ml", "9.000 ml", "0,9 ml"], answer: "900 ml", explain: "1 dl sind 100 ml. 9 · 100 = 900 ml.", difficulty: "easy" },
       { text: "In einem Tank sind 4 l 200 ml. Drei Flaschen mit je 650 ml werden gefüllt. Wie viel bleibt?", options: ["2 l 250 ml", "2 l 550 ml", "3 l 250 ml", "1 l 250 ml"], answer: "2 l 250 ml", explain: "3 · 650 ml = 1.950 ml. 4.200 ml − 1.950 ml = 2.250 ml = 2 l 250 ml.", difficulty: "hard" }
     ]
@@ -72,7 +72,7 @@ const levels = [
       { text: "3.500 g sind wie viele Kilogramm und Gramm?", options: ["35 kg", "3 kg 500 g", "3 kg 50 g", "350 kg"], answer: "3 kg 500 g", explain: "3.000 g sind 3 kg. Es bleiben 500 g übrig.", difficulty: "medium" },
       { text: "1 kg und 250 g sind wie viele Gramm?", options: ["1.025 g", "1.250 g", "12.500 g", "250 g"], answer: "1.250 g", explain: "1 kg sind 1.000 g. 1.000 g + 250 g = 1.250 g.", difficulty: "easy" },
       { text: "5.000 kg sind wie viele Tonnen?", options: ["5 t", "50 t", "500 t", "0,5 t"], answer: "5 t", explain: "1.000 kg sind 1 t. 5.000 kg sind also 5 t.", difficulty: "easy" },
-      { text: "7 kg und 250 g sind wie viele Gramm?", options: ["7.025 g", "7.250 g", "7.500 g", "725 g"], answer: "7.250 g", explain: "7 kg sind 7.000 g. 7.000 g + 250 g = 7.250 g.", difficulty: "hard" },
+      { text: "Ein Vorrat wiegt 7 kg 250 g. 1 kg 750 g werden verbraucht. Wie viel bleibt?", options: ["5 kg 500 g", "5 kg 750 g", "6 kg 500 g", "5 kg 250 g"], answer: "5 kg 500 g", explain: "7 kg 250 g sind 7.250 g. 1 kg 750 g sind 1.750 g. 7.250 g − 1.750 g = 5.500 g = 5 kg 500 g.", difficulty: "hard" },
       { text: "6 Tonnen und 300 kg sind wie viele Kilogramm?", options: ["6.030 kg", "6.300 kg", "6.003 kg", "63.000 kg"], answer: "6.300 kg", explain: "6 t sind 6.000 kg. Dazu kommen 300 kg: 6.300 kg.", difficulty: "medium" },
       { text: "Ein Gewicht von 2 t 50 kg wird um 750 kg leichter. Wie viel bleibt?", options: ["1.300 kg", "1.350 kg", "1.800 kg", "2.750 kg"], answer: "1.300 kg", explain: "2 t 50 kg sind 2.050 kg. 2.050 kg − 750 kg = 1.300 kg.", difficulty: "hard" }
     ]
@@ -174,6 +174,7 @@ function shuffle(items) {
 }
 
 const missionPattern = ["easy", "easy", "easy", "medium", "hard"];
+const missionXp = [10, 15, 15, 25, 35];
 
 function buildQuestionSet(level) {
   const history = progress.levelRuns[level.id] || {};
@@ -269,11 +270,14 @@ function answerQuestion(button, question) {
     if (item.dataset.option === question.answer) item.classList.add("correct");
   });
   if (!correct) button.classList.add("wrong");
-  if (correct) { score += 1; earnedThisRun += 20; }
+  const possibleXp = missionXp[questionIndex] || 0;
+  const remainingXp = Math.max(0, 100 - currentLevelXp());
+  const awardedXp = correct ? Math.min(possibleXp, remainingXp) : 0;
+  if (correct) { score += 1; earnedThisRun += awardedXp; }
   const feedback = $("#feedback");
   feedback.classList.remove("hidden", "wrong-feedback");
   $("#feedback-icon").textContent = correct ? "✓" : "!";
-  $("#feedback-title").textContent = correct ? "Richtig! +20 XP" : "Fast geschafft!";
+  $("#feedback-title").textContent = correct ? awardedXp > 0 ? `Richtig! +${awardedXp} XP` : "Richtig! Keine neuen XP" : "Fast geschafft!";
   $("#feedback-text").textContent = correct ? question.explain : `Die richtige Antwort ist ${question.answer}. ${question.explain}`;
   if (!correct) feedback.classList.add("wrong-feedback");
   $("#next-question").textContent = currentLevelXp() >= 100 || questionIndex === activeQuestions.length - 1 ? "Mission abschließen →" : "Nächste Aufgabe →";
