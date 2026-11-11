@@ -159,7 +159,6 @@ function saveProgress() { localStorage.setItem(STORAGE_KEY, JSON.stringify(progr
 
 function updateHeader() {
   $("#xp-total").textContent = `${progress.xp} / 600 XP`;
-  $("#streak-value").textContent = progress.streak;
   $("#levels-complete").textContent = progress.completed.length;
   $("#correct-answers").innerHTML = `${progress.correctAnswers} <small>von ${progress.answeredQuestions}</small>`;
   $("#missions-complete").innerHTML = `${progress.completed.length} <small>von 6</small>`;
