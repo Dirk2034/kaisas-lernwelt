@@ -52,6 +52,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--turquoise); out
 .icon-button:hover { color: var(--turquoise); border-color: var(--turquoise); transform: rotate(-20deg); }
 
 .screen { padding: 58px 0 36px; animation: appear .42s ease both; }
+.home-screen { padding-top: 38px; }
 .hidden { display: none !important; }
 .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 30px; align-items: center; min-height: 270px; }
 .eyebrow { color: var(--turquoise); font-size: 10px; font-weight: 800; letter-spacing: .22em; text-transform: uppercase; }
